@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  height: 100vh;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  /*smooths */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /*change later*/
+  scroll-snap-type: y mandatory;
+
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255,255,.5);
+}
+
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content:flex-end;
+  text-align: center;
+}
+
+.navbar ul li{
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+.navbar ul li a:hover{
+  color: rgb(52, 50, 156);
+}
+section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  scroll-snap-align: center;
+
+}
+#projects{
+    justify-content:flex-start;
+    height: 300vh;
+    scroll-snap-align: start;
+}
+#tag{
+  padding: 100px;
+  text-align: center;
+}
+#home{
+  background: url("../images/MacBook.png");
+  background-size: 100%;
+  background-position:right center;
+  background-repeat: no-repeat;
+}
+
+ #home p{
+   display: flex;
+   writing-mode: vertical-rl;
+   text-orientation: mixed;
+   align-items: flex-end;
+   align-self: center;
+   margin-top: 150px;
+   color: rgb(0, 51, 102);
+}
+/*
+#about{
+  background: url("../images/city2.png");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+*/
+section .name{
+  font-size: 100px;
+  color: rgb(0, 51, 102);
+  padding-left: 20%;
+  letter-spacing: 7px;
+}
+section .texts h1{
+  justify-content: center;
+  align-self: center;
+}
+ h1{
+  font-size: 75px;
+  color: rgb(0, 51, 102);
+
+}
+section h2{
+  padding-top: 50px;
+  padding-left: 20%;
+}
+
+section p{
+  padding: 30px;
+  width: 90%;
+  font-size: 20px;
+}
+#airplane{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+  padding-bottom: 70px;
+}
+#circle{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  z-index: 2;
+  position: relative;
+  top: 0;
+}
+.graphic{
+  width: 30%
+}
+#title{
+  padding-left: 20%;
+}
+#me{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 20px 15px rgb(0, 51, 102);
+}
+section .me{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: center;
+  width: 40%;
+  padding-right: 30px;
+}
+section .blurb{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+section .texts{
+  width: 50%;
+}
+section .texts p{
+  padding-left: 20%;
+  font-size: 20px;
+}
+.skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.skills ul{
+  font-size: 20px;
+}
+.basic{
+  padding-left: 40px;
+  justify-content: center;
+  align-self: center;
+}
+.basic ul{
+  list-style: none;
+  font-size: 20px;
+}
+.facts{
+  padding: 40px;
+}
+.facts h3{
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(0, 51, 102);
+}
+.basic strong{
+  font-weight: bolder;
+  color: rgb(0, 51, 102);
+}
+#resumepic{
+  margin-top: 20px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.home{
+  display: flex;
+  flex-direction: row;
+}
+.beginning{
+  width: 60%;
+}
+.title{
+  padding-top: 50px;
+  padding-left: 10%;
+}
+#blurb{
+  padding-left: 10%;
+  width: 40%;
+}
+#banner{
+  width: 100%;
+  object-fit: cover;
+
+}
+.fish{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.one{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+  padding-right: 50px;
+  width: 50%
+}
+.two{
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 150px;
+  padding-left: 50px;
+
+}
+.iphone{
+  height: 600px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 20px 15px rgb(0, 51, 102);
+}
+.square{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin-right: 3%;
+  margin-top: 50px;
+}
+.pics{
+  margin-left: 20%;
+}
+.sect{
+  display: flex;
+  flex-direction: row;
+}
+.mini{
+  height:50px;
+  width: 50px;
+  object-fit: cover;
+  margin-top: 50px;
+  border-radius: 25px;
+}
+#IA{
+  border-radius: 50px;
+  margin-left: 20%;
+}
+.description{
+  width: 45%;
+}
+.description h2{
+  padding: 0;
+  padding-left: 30px;
+  color: rgb(0, 51, 102)
+}
+
+.object {
+        -webkit-animation: action 1s infinite  alternate;
+        animation: action 1s infinite  alternate;
+    }
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
